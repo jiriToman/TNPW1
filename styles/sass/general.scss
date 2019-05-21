@@ -1,0 +1,45 @@
+// main: main.scss
+@import '../colors.scss';
+@import '../screensizes.scss';
+#content {
+    padding: 15px;
+    padding-top: 32px;
+    padding-bottom: 48px;
+    margin: auto;
+    // display: flex;
+    @media screen and (min-width: $NOTmobile) and (max-width: $smTablet) {
+        max-width: 540px;
+    }
+    @media screen and (min-width: $NOTsmTablet) and (max-width: $NOTdesktop) {
+        max-width: 720px;
+    }
+    @media screen and (min-width: $desktop) and (max-width: $NOTdesktoplg) {
+        max-width: 960px;
+    }
+    @media screen and (min-width: $desktoplg) {
+        max-width: 1140px;
+    }
+}
+
+article {
+    ul {
+        @media screen and (max-width: $NOTdesktop) {
+            text-align: center;
+        }
+    }
+}
+
+.flexrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+        margin-bottom: 32px;
+    }
+    @media screen and (max-width: $NOTdesktop) {
+        padding-bottom: 32px;
+    }
+    &.gallery {
+        justify-content: space-evenly
+    }
+}

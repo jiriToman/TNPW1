@@ -1,0 +1,172 @@
+// main: main.scss
+@import '../colors.scss';
+#nojs {
+    @media screen and (min-width: $smTablet) {
+        display: none;
+    }
+}
+
+* {
+    transition: .25s ease-in-out;
+    box-sizing: border-box;
+}
+
+body {
+    background: $section-grey;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    display: block;
+    background: $section-grey;
+    border-radius: 2px;
+}
+
+#menu-toggle {
+    width: 50px;
+    height: 50px;
+    margin: 0px auto;
+    position: relative;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 5px;
+    &:hover {
+        background: transparent;
+    }
+    #hamburger {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        span {
+            width: 30px;
+            height: 2px;
+            position: relative;
+            top: 12px;
+            left: 10px;
+            margin: 5px 0;
+            &:nth-child(1) {
+                transition-delay: .5s;
+            }
+            &:nth-child(2) {
+                transition-delay: .625s;
+            }
+            &:nth-child(3) {
+                transition-delay: .75s;
+            }
+        }
+    }
+    #cross {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transform: rotate(45deg);
+        span {
+            &:nth-child(1) {
+                height: 0%;
+                width: 2px;
+                position: absolute;
+                top: 10%;
+                left: 24px;
+                transition-delay: 0s;
+            }
+            &:nth-child(2) {
+                width: 0%;
+                height: 2px;
+                position: absolute;
+                left: 10%;
+                top: 24px;
+                transition-delay: .25s;
+            }
+        }
+    }
+}
+
+#menu-toggle.open {
+    #hamburger {
+        span {
+            width: 0%;
+            &:nth-child(1) {
+                transition-delay: 0s;
+            }
+            &:nth-child(2) {
+                transition-delay: .125s;
+            }
+            &:nth-child(3) {
+                transition-delay: .25s;
+            }
+        }
+    }
+    #cross {
+        span {
+            &:nth-child(1) {
+                height: 80%;
+                transition-delay: .625s;
+            }
+        }
+        span {
+            &:nth-child(2) {
+                width: 80%;
+                transition-delay: .375s;
+            }
+        }
+    }
+}
+
+.topnav {
+    z-index: 100;
+    overflow: hidden;
+    background-color: $prussian-blue;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    a {
+        float: left;
+        display: block;
+        color: $section-grey;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        &:hover {
+            background-color: $section-grey;
+            color: $black;
+        }
+        &:not(:first-child) {
+            @media screen and (max-width: $NOTmobile) {
+                display: none;
+            }
+        }
+    }
+    #menu-toggle {
+        display: none;
+        @media screen and (max-width: $NOTmobile) {
+            float: right;
+            display: block;
+            margin-right: 5px;
+        }
+    }
+    &.responsive {
+        @media screen and (max-width: $NOTmobile) {
+            position: fixed;
+            #menu-toggle {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            a {
+                float: none !important;
+                display: block !important;
+                text-align: left !important;
+            }
+        }
+    }
+}
+
+.active {
+    // background-color: #4CAF50;
+    background-color: $light-black;
+    color: white;
+}

@@ -1,0 +1,27 @@
+// main: main.scss
+@import '../colors.scss';
+footer {
+    // padding: 15px 0 15px 0;
+    background-color: $prussian-blue;
+    text-align: center;
+    color: $section-grey;
+    padding: 32px;
+    a {
+        color: $cream;
+        &:hover {
+            text-decoration: none;
+            color: $cream;
+        }
+        &:visited {
+            color: $light-grey;
+            text-decoration: none;
+        }
+    }
+}
+
+.bold {
+    font-weight: bold;
+    color: $section-grey;
+    background-color: $prussian-blue;
+    display: inline;
+}

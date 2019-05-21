@@ -1,0 +1,12 @@
+nav {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+body {
+    padding-bottom: 64px;
+    padding-top: 32px;
+}

@@ -1,0 +1,94 @@
+// main: main.scss
+@import '../screensizes.scss';
+@import '../colors.scss';
+$fontR:'Roboto',
+sans-serif;
+$fontW:'Helvetica Neue',
+Helvetica,
+Arial,
+Verdana,
+Geneva,
+sans-serif;
+%ndeskxt {
+    @media screen and (max-width: $NOTdesktop) {
+        text-align: center;
+    }
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-bottom: 1rem;
+    @media screen and (min-width: $NOTsmTablet) {
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width: $NOTsmTablet)and (max-width: $NOTdesktoplg) {
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -0.8px;
+    }
+    @media screen and (min-width: $desktoplg) {
+        font-size: 56px;
+        line-height: 1.14;
+        letter-spacing: -1.2px;
+    }
+    color: $black;
+    font-family: $fontR;
+}
+
+h2 {
+    font-family: $fontR;
+    @extend %ndeskxt;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @media screen and (min-width: $NOTmobile)and (max-width: $smTablet) {
+        margin-top: 47px;
+    }
+    @media screen and (min-width: $NOTsmTablet) {
+        font-weight: 700;
+        margin-top: 0px;
+    }
+    @media screen and (min-width: $desktoplg) {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+}
+
+p {
+    font-family: $fontW;
+    @extend %ndeskxt;
+    font-size: 18px;
+    line-height: 1.78;
+    letter-spacing: 0.1px;
+    @media screen and (max-width: $mobile) {
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+    }
+}
+
+h3 {
+    font-family: $fontR;
+    @extend %ndeskxt;
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 1.33;
+    @media screen and (min-width: $NOTsmTablet) and (max-width: $NOTdesktoplg) {
+        font-weight: 800;
+        line-height: 1.25;
+    }
+    @media screen and (min-width: $desktoplg) {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 24px;
+    }
+}

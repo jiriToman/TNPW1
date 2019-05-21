@@ -1,0 +1,19 @@
+// main: main.scss
+@import '../colors.scss';
+// main: ./main.scss,
+$mobile:575px;
+// xs only
+$NOTmobile:576px;
+// sm start
+$smTablet:767px;
+// xs and sm only
+$NOTsmTablet:768px;
+// md start
+$NOTdesktop:991px;
+// all except lg + xl
+$desktop:992px;
+// lg start
+$NOTdesktoplg:1199px;
+// all except xl
+$desktoplg:1200px;
+// xl start

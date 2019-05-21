@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Web o uměleckých zážitcích Jiřího Tomana">
+    <meta name="author" content="Jiří Toman">
+    <title>Tart - Toman art web</title>
+
+    <link rel="stylesheet" href="./styles/main.min.css">
+    <link rel="stylesheet" href="./styles/lightbox.css">
+    <link rel=stylesheet href="./styles/print.css" media="print">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <noscript>
+        <nav id="nojs">
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li> <a href="./views/rijks.html">Rijksmuseum Amsterdam</a></li>
+                <li><a href="./views/budapest.html">Budapešť</a></li>
+                <li><a href="./views/wien.html">Vídeň</a></li>
+                <li><a href="./views/prag.html">Picasso v Praze</a></li>
+
+            </ul>
+        </nav>
+    </noscript>
+    <nav>
+        <div class="topnav" id="topnav">
+            <a href="#topnav" class="active">Home</a>
+            <a href="./views/rijks.html">Rijksmuseum</a>
+            <a href="./views/budapest.html">Budapešť</a>
+            <a href="./views/wien.html">Vídeň</a>
+            <a href="./views/prag.html">Picasso</a>
+
+
+            <div id="menu-toggle" class="menu-toggle" onclick="myFunction()">
+                <div id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="cross">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+    <div id="content">
+        <header>
+
+            <h1>Tart stránka o mých cestách za uměním</h1>
+
+        </header>
+        <main>
+
+
+
+            <article>
+                <h2>Oč běží</h2>
+                <p>Mám rád umění, ale každý člověk má unikátní vkus. Moje paměť na jména nestojí za nic tak jsem se rozhodl vytvořit stránku, která mi přehledně pomůže zapamatovat si mé zážitky z cest za uměním. </p>
+                <p>Stránka obsahuje souhrn mých návštěv muzeí/galerií a vybrané obrázky ke každému umělci.</p>
+
+                <h2>Kde jsem byl</h2>
+                <ul>
+                    <li> <a href="./views/rijks.html">Rijksmuseum Amsterdam</a></li>
+                    <li><a href="/views/budapest.html">Budapešť</a></li>
+                    <li><a href="/views/wien.html">Vídeň</a></li>
+                    <li><a href="/views/prag.html">Picasso v Praze</a></li>
+
+                </ul>
+
+                <p>(Jedná se pouze o výběr cest z posledních 2 let)</p>
+
+                <h2>Proč takhle</h2>
+                <p>Už nějakou dobu jsem uvažoval, že si pro sebe udělám web o umění a zážitcích, které mě na cestách oslovily(a později ho rozšířím na podrobný cestovatelský deník s galerií umění a umělců, co se mi líbí).
+                </p>
+                <p>Bohužel lidská paměť mívá tendenci redukovat a idealizovat minulost, aby byla schopná pracovat s dále narůstajícím množstvím informací. Pokud si minulé události zaznamenám, budu si je později lépe schopen vybavit jak se skutečně staly.</p>
+                <p>Několikrát jsem projekt odkládal a kvůli nedostatku času jsem jej nerealizoval. Nyní mám šanci připravit obsah stránek který pak využiji při tvorbě finální verze mimo projekt TNPW1 (Stránka bude dynamická a bude mít více funkcí jako např.
+                    vyhledávání podle umělce/díla)</p>
+                <h3>Poděkování</h3>
+                <p>Mým rodičům za prvotní impuls k zájmu o výtvarné umění</p>
+                <p>Mému bratrovi za společnost a fotky</p>
+                <p>Rijksmuzeu za poskytnutí obrázků</p>
+
+
+            </article>
+        </main>
+    </div>
+    <footer id="footer">
+        <p>Toto je studentský projekt pro předmět TNPW1</p>
+
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjiritoman.github.io%2FTNPW1%2F"><span
+                class="bold">W3C</span>.nu validace</a>
+
+
+
+    </footer>
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/lightbox.js"></script>
+</body>
+
+</html>
